@@ -1,0 +1,2226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"
+    />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <title>RealFood</title>
+    <meta
+      name="description"
+      content="Find delicious recipes, meal ideas and Food Love Stories here at Real Food. Our cooking tips will pr"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/uikit.js"></script>
+    <script src="assets/js/uikit-icons.js"></script>
+    <script src="assets/js/lity.min.js"></script>
+    <script src="assets/js/jquery.upload.js"></script>
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script type="text/javascript">
+      /* Global js vars */
+      var SITEURL = 'https://wicombit.com/demo/realfood';
+      var IMAGES_FOLDER = 'https://wicombit.com/demo/realfood/images/';
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- SIDEMENU -->
+
+    <!-- <div class="tas-sidemenu" id="sidemenu" uk-offcanvas="overlay: true;">
+      <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+        <div class="uk-width-1-1 uk-flex uk-flex-middle uk-flex-center">
+          <a href="https://wicombit.com/demo/realfood">
+            <img class="uk-logo" src="images/1618276438.png" />
+          </a>
+        </div>
+
+        <hr />
+
+        <a
+          href="signin.html"
+          class="tas-signin uk-button uk-button-primary uk-border-rounded"
+        >
+          Sign In
+        </a>
+
+        <hr />
+
+        <ul class="tas-main-menu uk-nav-default uk-margin-small-bottom" uk-nav>
+          <li>
+            <a href="https://wicombit.com/demo/realfood" target="_self">Home</a>
+          </li>
+          <li><a href="search.html" target="_self">Search</a></li>
+          <li><a href="members.html" target="_self">Members</a></li>
+        </ul>
+
+        <div class="uk-width-1-1 uk-flex uk-flex-center">
+          <ul
+            class="tas-followus uk-iconnav uk-margin-small-top uk-margin-small-bottom"
+          >
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                uk-icon="icon: facebook"
+                style="color: #3b5998"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/home"
+                uk-icon="icon: twitter"
+                style="color: #1da1f2"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/"
+                uk-icon="icon: youtube"
+                style="color: #ff0000"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/"
+                uk-icon="icon: linkedin"
+                style="color: #0077b5"
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- END SIDEMENU -->
+    <!-- HEADER -->
+    <!-- <div class="uk-section-primary uk-visible@m">
+      <div class="uk-container">
+        <div class="tas_top_nav uk-padding-small">
+          <div class="uk-container">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+              <div class="uk-navbar-left">
+                <a
+                  class="uk-navbar-item uk-logo"
+                  href="https://wicombit.com/demo/realfood"
+                >
+                  <img src="images/1618276318.png" />
+                </a>
+              </div>
+
+              <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav">
+                  <li>
+                    <a href="https://wicombit.com/demo/realfood" target="_self"
+                      >Home</a
+                    >
+                  </li>
+                  <li><a href="search.html" target="_self">Search</a></li>
+                  <li><a href="members.html" target="_self">Members</a></li>
+                </ul>
+              </div>
+
+              <div class="uk-navbar-right">
+                <a
+                  class="uk-button uk-button-default uk-text-truncate uk-border-pill"
+                  href="signin.html"
+                >
+                  <i class="ti ti-plus"></i> Create Recipe
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <nav
+      class="tas_mobile_nav uk-navbar-container uk-padding uk-hidden@m"
+      uk-navbar
+    >
+      <div class="uk-navbar-left">
+        <a
+          class="uk-button uk-button-link tas_button"
+          href="index.html#sidemenu"
+          uk-toggle
+        >
+          <i class="ti ti-align-justified"></i>
+        </a>
+      </div>
+
+      <div class="uk-navbar-center">
+        <a
+          class="uk-navbar-item uk-logo"
+          href="https://wicombit.com/demo/realfood"
+        >
+          <img src="images/1618276318.png" />
+        </a>
+      </div>
+
+      <div class="uk-navbar-right">
+        <a class="uk-button uk-button-link tas_button" href="search.html">
+          <i class="ti ti-search"></i>
+        </a>
+      </div>
+    </nav> -->
+
+    <!-- HOME -->
+
+    <!-- <div
+      class="uk-container uk-margin-large-top"
+      uk-scrollspy="cls: uk-animation-fade; delay: 100"
+    >
+      <div class="tas_slider_1" uk-slider>
+        <div class="uk-position-relative">
+          <div class="uk-slider-container">
+            <ul class="uk-slider-items uk-child-width-1-1">
+              <li>
+                <div
+                  class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+                  uk-grid
+                >
+                  <a href="recipe/1/mighty-super-cheesecake.html">
+                    <div class="uk-card-media-left uk-cover-container">
+                      <img
+                        src="images/recipe_1618205715.jpg"
+                        alt="Mighty Super Cheesecake"
+                        uk-cover
+                      />
+                      <canvas width="600" height="400"></canvas>
+                    </div>
+                  </a>
+                  <div>
+                    <div class="uk-card-body uk-text-center uk-text-left@s">
+                      <div class="tas_badge uk-label">Desserts</div>
+
+                      <a href="recipe/1/mighty-super-cheesecake.html">
+                        <h2 class="uk-card-title">Mighty Super Cheesecake</h2>
+                      </a>
+                      <hr class="uk-divider-small" />
+
+                      <div class="tas_rating">
+                        <img src="assets/img/like.svg" /><span>12</span>
+                      </div>
+
+                      <p>
+                        Nam aliquam sem et tortor consequat. Odio tempor orci
+                        dapibus ultrices in iaculis. Vitae proin sagittis nisl
+                        rhoncus mattis rhoncus. Sed risus ultricies tristique
+                        nulla aliquet. Excepteur sint occaecat cupidatat non
+                        proident
+                      </p>
+
+                      <ul
+                        class="uk-flex-center uk-flex-left@s uk-subnav"
+                        uk-margin
+                      >
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-users"></i> 4 Serv.</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-clock"></i> 45 Min</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+                  uk-grid
+                >
+                  <a
+                    href="recipe/2/broad-beans-tomato-garlic-mozzarella-cheese-bruschetta.html"
+                  >
+                    <div class="uk-card-media-left uk-cover-container">
+                      <img
+                        src="images/recipe_1620056120.jpg"
+                        alt="Mozzarella Cheese Bruschetta"
+                        uk-cover
+                      />
+                      <canvas width="600" height="400"></canvas>
+                    </div>
+                  </a>
+                  <div>
+                    <div class="uk-card-body uk-text-center uk-text-left@s">
+                      <div class="tas_badge uk-label">Pasta</div>
+
+                      <a
+                        href="recipe/2/broad-beans-tomato-garlic-mozzarella-cheese-bruschetta.html"
+                      >
+                        <h2 class="uk-card-title">
+                          Mozzarella Cheese Bruschetta
+                        </h2>
+                      </a>
+                      <hr class="uk-divider-small" />
+
+                      <div class="tas_rating">
+                        <img src="assets/img/like.svg" /><span>1</span>
+                      </div>
+
+                      <p>
+                        Nam aliquam sem et tortor consequat. Odio tempor orci
+                        dapibus ultrices in iaculis. Vitae proin sagittis nisl
+                        rhoncus mattis rhoncus. Sed risus ultricies tristique
+                        nulla aliquet. Excepteur sint occaecat cupidatat non
+                        proident
+                      </p>
+
+                      <ul
+                        class="uk-flex-center uk-flex-left@s uk-subnav"
+                        uk-margin
+                      >
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-users"></i> 2 Serv.</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-clock"></i> 5 Min</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+                  uk-grid
+                >
+                  <a href="recipe/3/spinach-and-cheese-pasta.html">
+                    <div class="uk-card-media-left uk-cover-container">
+                      <img
+                        src="images/recipe_1619359174.jpg"
+                        alt="Spinach and Cheese Pasta"
+                        uk-cover
+                      />
+                      <canvas width="600" height="400"></canvas>
+                    </div>
+                  </a>
+                  <div>
+                    <div class="uk-card-body uk-text-center uk-text-left@s">
+                      <div class="tas_badge uk-label">Vegan</div>
+
+                      <a href="recipe/3/spinach-and-cheese-pasta.html">
+                        <h2 class="uk-card-title">Spinach and Cheese Pasta</h2>
+                      </a>
+                      <hr class="uk-divider-small" />
+
+                      <div class="tas_rating">
+                        <img src="assets/img/like.svg" /><span>5</span>
+                      </div>
+
+                      <p>
+                        Nam aliquam sem et tortor consequat. Odio tempor orci
+                        dapibus ultrices in iaculis. Vitae proin sagittis nisl
+                        rhoncus mattis rhoncus. Sed risus ultricies tristique
+                        nulla aliquet. Excepteur sint occaecat cupidatat non
+                        proident
+                      </p>
+
+                      <ul
+                        class="uk-flex-center uk-flex-left@s uk-subnav"
+                        uk-margin
+                      >
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-users"></i> 4 Serv.</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-clock"></i> 15 Min</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+                  uk-grid
+                >
+                  <a href="recipe/6/berries-and-banana-smoothie.html">
+                    <div class="uk-card-media-left uk-cover-container">
+                      <img
+                        src="images/recipe_1620059598.jpg"
+                        alt="Berries and Banana Smoothie"
+                        uk-cover
+                      />
+                      <canvas width="600" height="400"></canvas>
+                    </div>
+                  </a>
+                  <div>
+                    <div class="uk-card-body uk-text-center uk-text-left@s">
+                      <div class="tas_badge uk-label">Smoothies</div>
+
+                      <a href="recipe/6/berries-and-banana-smoothie.html">
+                        <h2 class="uk-card-title">
+                          Berries and Banana Smoothie
+                        </h2>
+                      </a>
+                      <hr class="uk-divider-small" />
+
+                      <div class="tas_rating">
+                        <img src="assets/img/like.svg" /><span>2</span>
+                      </div>
+
+                      <p>
+                        Nam aliquam sem et tortor consequat. Odio tempor orci
+                        dapibus ultrices in iaculis. Vitae proin sagittis nisl
+                        rhoncus mattis rhoncus. Sed risus ultricies tristique
+                        nulla aliquet. Excepteur sint occaecat cupidatat non
+                        proident
+                      </p>
+
+                      <ul
+                        class="uk-flex-center uk-flex-left@s uk-subnav"
+                        uk-margin
+                      >
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-users"></i> 1 Serv.</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-clock"></i> 5 Min</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+                  uk-grid
+                >
+                  <a href="recipe/7/how-to-make-fast-margherita-pizza.html">
+                    <div class="uk-card-media-left uk-cover-container">
+                      <img
+                        src="images/recipe_1620060146.jpg"
+                        alt="How to make fast margherita pizza"
+                        uk-cover
+                      />
+                      <canvas width="600" height="400"></canvas>
+                    </div>
+                  </a>
+                  <div>
+                    <div class="uk-card-body uk-text-center uk-text-left@s">
+                      <div class="tas_badge uk-label">Pizza</div>
+
+                      <a href="recipe/7/how-to-make-fast-margherita-pizza.html">
+                        <h2 class="uk-card-title">
+                          How to make fast margherita pizza
+                        </h2>
+                      </a>
+                      <hr class="uk-divider-small" />
+
+                      <div class="tas_rating">
+                        <img src="assets/img/like.svg" /><span>7</span>
+                      </div>
+
+                      <p>
+                        Nam aliquam sem et tortor consequat. Odio tempor orci
+                        dapibus ultrices in iaculis. Vitae proin sagittis nisl
+                        rhoncus mattis rhoncus. Sed risus ultricies tristique
+                        nulla aliquet. Excepteur sint occaecat cupidatat non
+                        proident
+                      </p>
+
+                      <ul
+                        class="uk-flex-center uk-flex-left@s uk-subnav"
+                        uk-margin
+                      >
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-users"></i> 4 Serv.</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-clock"></i> 45 Min</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+                  uk-grid
+                >
+                  <a href="recipe/10/blueberries-and-cream-almond-oatmeal.html">
+                    <div class="uk-card-media-left uk-cover-container">
+                      <img
+                        src="images/recipe_1620061767.jpg"
+                        alt="Blueberries and Cream almond"
+                        uk-cover
+                      />
+                      <canvas width="600" height="400"></canvas>
+                    </div>
+                  </a>
+                  <div>
+                    <div class="uk-card-body uk-text-center uk-text-left@s">
+                      <div class="tas_badge uk-label">Breakfast</div>
+
+                      <a
+                        href="recipe/10/blueberries-and-cream-almond-oatmeal.html"
+                      >
+                        <h2 class="uk-card-title">
+                          Blueberries and Cream almond
+                        </h2>
+                      </a>
+                      <hr class="uk-divider-small" />
+
+                      <div class="tas_rating">
+                        <img src="assets/img/like.svg" /><span>2</span>
+                      </div>
+
+                      <p>
+                        Nam aliquam sem et tortor consequat. Odio tempor orci
+                        dapibus ultrices in iaculis. Vitae proin sagittis nisl
+                        rhoncus mattis rhoncus. Sed risus ultricies tristique
+                        nulla aliquet. Excepteur sint occaecat cupidatat non
+                        proident
+                      </p>
+
+                      <ul
+                        class="uk-flex-center uk-flex-left@s uk-subnav"
+                        uk-margin
+                      >
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-users"></i> 2 Serv.</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-clock"></i> 8 Min</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ul
+          class="tas_dotnav_1 uk-slider-nav uk-dotnav uk-flex-center uk-margin"
+        ></ul>
+      </div>
+    </div> -->
+    <!-- CONTENT -->
+
+    <!-- latest recipies -->
+    <!-- <div
+      class="uk-container uk-margin-top"
+      uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 100"
+    >
+      <h2 class="tas_heading uk-heading-line uk-text-center">
+        <span>Latest Recipes</span>
+      </h2>
+
+      <div
+        class="uk-grid-match uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-3@l"
+        uk-grid
+      >
+        <div class="tas_card_1">
+          <div class="uk-card uk-card-default uk-border-rounded">
+            <a href="recipe/1/mighty-super-cheesecake.html">
+              <div class="uk-card-media-top uk-cover-container">
+                <img
+                  src="images/recipe_1618205715.jpg"
+                  alt="Mighty Super Cheesecake"
+                  uk-cover
+                />
+                <canvas width="600" height="300"></canvas>
+              </div>
+            </a>
+            <div class="uk-card-body">
+              <div class="uk-card-badge uk-label">Desserts</div>
+
+              <div class="tas_rating">
+                <img src="assets/img/like.svg" /><span>12</span>
+              </div>
+
+              <a
+                class="uk-card-title"
+                href="recipe/1/mighty-super-cheesecake.html"
+                >Mighty Super Cheesecake</a
+              >
+
+              <ul class="uk-subnav" uk-margin>
+                <li>
+                  <span><i class="tas_icon ti ti-users"></i> 4 Serv.</span>
+                </li>
+                <li>
+                  <span><i class="tas_icon ti ti-clock"></i> 45 Min</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="tas_card_1">
+          <div class="uk-card uk-card-default uk-border-rounded">
+            <a
+              href="recipe/2/broad-beans-tomato-garlic-mozzarella-cheese-bruschetta.html"
+            >
+              <div class="uk-card-media-top uk-cover-container">
+                <img
+                  src="images/recipe_1620056120.jpg"
+                  alt="Mozzarella Cheese Bruschetta"
+                  uk-cover
+                />
+                <canvas width="600" height="300"></canvas>
+              </div>
+            </a>
+            <div class="uk-card-body">
+              <div class="uk-card-badge uk-label">Pasta</div>
+
+              <div class="tas_rating">
+                <img src="assets/img/like.svg" /><span>1</span>
+              </div>
+
+              <a
+                class="uk-card-title"
+                href="recipe/2/broad-beans-tomato-garlic-mozzarella-cheese-bruschetta.html"
+                >Mozzarella Cheese Bruschetta</a
+              >
+
+              <ul class="uk-subnav" uk-margin>
+                <li>
+                  <span><i class="tas_icon ti ti-users"></i> 2 Serv.</span>
+                </li>
+                <li>
+                  <span><i class="tas_icon ti ti-clock"></i> 5 Min</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="tas_card_1">
+          <div class="uk-card uk-card-default uk-border-rounded">
+            <a href="recipe/3/spinach-and-cheese-pasta.html">
+              <div class="uk-card-media-top uk-cover-container">
+                <img
+                  src="images/recipe_1619359174.jpg"
+                  alt="Spinach and Cheese Pasta"
+                  uk-cover
+                />
+                <canvas width="600" height="300"></canvas>
+              </div>
+            </a>
+            <div class="uk-card-body">
+              <div class="uk-card-badge uk-label">Vegan</div>
+
+              <div class="tas_rating">
+                <img src="assets/img/like.svg" /><span>5</span>
+              </div>
+
+              <a
+                class="uk-card-title"
+                href="recipe/3/spinach-and-cheese-pasta.html"
+                >Spinach and Cheese Pasta</a
+              >
+
+              <ul class="uk-subnav" uk-margin>
+                <li>
+                  <span><i class="tas_icon ti ti-users"></i> 4 Serv.</span>
+                </li>
+                <li>
+                  <span><i class="tas_icon ti ti-clock"></i> 15 Min</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="tas_card_1">
+          <div class="uk-card uk-card-default uk-border-rounded">
+            <a href="recipe/5/brownies-with-walnuts.html">
+              <div class="uk-card-media-top uk-cover-container">
+                <img
+                  src="images/recipe_1620058937.jpg"
+                  alt="Brownies with Walnuts"
+                  uk-cover
+                />
+                <canvas width="600" height="300"></canvas>
+              </div>
+            </a>
+            <div class="uk-card-body">
+              <div class="uk-card-badge uk-label">Desserts</div>
+
+              <div class="tas_rating">
+                <img src="assets/img/like.svg" /><span>2</span>
+              </div>
+
+              <a
+                class="uk-card-title"
+                href="recipe/5/brownies-with-walnuts.html"
+                >Brownies with Walnuts</a
+              >
+
+              <ul class="uk-subnav" uk-margin>
+                <li>
+                  <span><i class="tas_icon ti ti-users"></i> 3 Serv.</span>
+                </li>
+                <li>
+                  <span><i class="tas_icon ti ti-clock"></i> 25 Min</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="tas_card_1">
+          <div class="uk-card uk-card-default uk-border-rounded">
+            <a href="recipe/6/berries-and-banana-smoothie.html">
+              <div class="uk-card-media-top uk-cover-container">
+                <img
+                  src="images/recipe_1620059598.jpg"
+                  alt="Berries and Banana Smoothie"
+                  uk-cover
+                />
+                <canvas width="600" height="300"></canvas>
+              </div>
+            </a>
+            <div class="uk-card-body">
+              <div class="uk-card-badge uk-label">Smoothies</div>
+
+              <div class="tas_rating">
+                <img src="assets/img/like.svg" /><span>2</span>
+              </div>
+
+              <a
+                class="uk-card-title"
+                href="recipe/6/berries-and-banana-smoothie.html"
+                >Berries and Banana Smoothie</a
+              >
+
+              <ul class="uk-subnav" uk-margin>
+                <li>
+                  <span><i class="tas_icon ti ti-users"></i> 1 Serv.</span>
+                </li>
+                <li>
+                  <span><i class="tas_icon ti ti-clock"></i> 5 Min</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="tas_card_1">
+          <div class="uk-card uk-card-default uk-border-rounded">
+            <a href="recipe/7/how-to-make-fast-margherita-pizza.html">
+              <div class="uk-card-media-top uk-cover-container">
+                <img
+                  src="images/recipe_1620060146.jpg"
+                  alt="How to make fast margherita pizza"
+                  uk-cover
+                />
+                <canvas width="600" height="300"></canvas>
+              </div>
+            </a>
+            <div class="uk-card-body">
+              <div class="uk-card-badge uk-label">Pizza</div>
+
+              <div class="tas_rating">
+                <img src="assets/img/like.svg" /><span>7</span>
+              </div>
+
+              <a
+                class="uk-card-title"
+                href="recipe/7/how-to-make-fast-margherita-pizza.html"
+                >How to make fast margherita pizza</a
+              >
+
+              <ul class="uk-subnav" uk-margin>
+                <li>
+                  <span><i class="tas_icon ti ti-users"></i> 4 Serv.</span>
+                </li>
+                <li>
+                  <span><i class="tas_icon ti ti-clock"></i> 45 Min</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- featured categories -->
+    <!-- <div
+      class="uk-container uk-margin-top"
+      uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 100"
+    >
+      <h2 class="tas_heading uk-heading-line uk-text-center">
+        <span>Featured Categories</span>
+      </h2>
+
+      <div uk-slider="finite: true">
+        <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+          <ul
+            class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-6@l uk-grid-large"
+            uk-grid
+          >
+            <li>
+              <a href="search%3Fcategory=2.html">
+                <div class="tas_card_3">
+                  <div class="uk-cover-container">
+                    <img
+                      src="images/category_1618205843.jpg"
+                      alt="Desserts"
+                      uk-cover
+                    />
+                  </div>
+                  <h5 class="card-title">Desserts</h5>
+                  <p>2 Recipes</p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="search%3Fcategory=3.html">
+                <div class="tas_card_3">
+                  <div class="uk-cover-container">
+                    <img
+                      src="images/category_1620054252.jpg"
+                      alt="Smoothies"
+                      uk-cover
+                    />
+                  </div>
+                  <h5 class="card-title">Smoothies</h5>
+                  <p>1 Recipes</p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="search%3Fcategory=4.html">
+                <div class="tas_card_3">
+                  <div class="uk-cover-container">
+                    <img
+                      src="images/category_1620054496.jpg"
+                      alt="Pizza"
+                      uk-cover
+                    />
+                  </div>
+                  <h5 class="card-title">Pizza</h5>
+                  <p>1 Recipes</p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="search%3Fcategory=5.html">
+                <div class="tas_card_3">
+                  <div class="uk-cover-container">
+                    <img
+                      src="images/category_1620054659.jpg"
+                      alt="Pasta"
+                      uk-cover
+                    />
+                  </div>
+                  <h5 class="card-title">Pasta</h5>
+                  <p>1 Recipes</p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="search%3Fcategory=6.html">
+                <div class="tas_card_3">
+                  <div class="uk-cover-container">
+                    <img
+                      src="images/category_1620054798.jpg"
+                      alt="Burger"
+                      uk-cover
+                    />
+                  </div>
+                  <h5 class="card-title">Burger</h5>
+                  <p>1 Recipes</p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="search%3Fcategory=7.html">
+                <div class="tas_card_3">
+                  <div class="uk-cover-container">
+                    <img
+                      src="images/category_1620054842.jpg"
+                      alt="Breakfast"
+                      uk-cover
+                    />
+                  </div>
+                  <h5 class="card-title">Breakfast</h5>
+                  <p>2 Recipes</p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="search%3Fcategory=8.html">
+                <div class="tas_card_3">
+                  <div class="uk-cover-container">
+                    <img
+                      src="images/category_1620055458.jpg"
+                      alt="Vegan"
+                      uk-cover
+                    />
+                  </div>
+                  <h5 class="card-title">Vegan</h5>
+                  <p>1 Recipes</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul
+          class="tas_dotnav uk-slider-nav uk-dotnav uk-flex-center uk-margin-large-top uk-margin-medium-bottom"
+        ></ul>
+      </div>
+    </div> -->
+
+    <!-- random recipies -->
+    <!-- <div
+      class="uk-section uk-section-primary uk-preserve-color uk-margin-top"
+      uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 100"
+    >
+      <div class="uk-container">
+        <h2 class="tas_heading uk-heading-line uk-text-center">
+          <span>Random Recipes</span>
+        </h2>
+
+        <div uk-slider="finite: true">
+          <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+            <ul
+              class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-3@l"
+              uk-grid
+              uk-height-match="target: > li > div > .uk-card"
+            >
+              <li>
+                <div class="tas_card_1">
+                  <div class="uk-card uk-card-default uk-border-rounded">
+                    <a href="recipe/3/spinach-and-cheese-pasta.html">
+                      <div class="uk-card-media-top uk-cover-container">
+                        <img
+                          src="images/recipe_1619359174.jpg"
+                          alt="Spinach and Cheese Pasta"
+                          uk-cover
+                        />
+                        <canvas width="600" height="300"></canvas>
+                      </div>
+                    </a>
+
+                    <div class="uk-card-body">
+                      <div class="uk-card-badge uk-label">Vegan</div>
+
+                      <div class="tas_rating">
+                        <img src="assets/img/like.svg" /><span>5</span>
+                      </div>
+
+                      <a
+                        class="uk-card-title"
+                        href="recipe/3/spinach-and-cheese-pasta.html"
+                        >Spinach and Cheese Pasta</a
+                      >
+
+                      <ul class="uk-subnav" uk-margin>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-users"></i> 4 Serv.</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-clock"></i> 15 Min</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="uk-card-footer">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                          <a href="user/1.html">
+                            <div class="uk-cover-container uk-border-circle">
+                              <img src="images/1621537827.jpg" uk-cover />
+                              <canvas width="40" height="40"></canvas>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="uk-width-expand">
+                          <h5
+                            class="uk-margin-remove-bottom uk-flex uk-flex-middle"
+                          >
+                            <a class="uk-link-muted" href="user/1.html"
+                              >Wicombit</a
+                            >
+                            <img
+                              class="verify-badge"
+                              width="14"
+                              src="assets/img/badge.svg"
+                            />
+                          </h5>
+                          <p class="uk-text-meta uk-margin-remove-top">
+                            12/04/2021
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="tas_card_1">
+                  <div class="uk-card uk-card-default uk-border-rounded">
+                    <a href="recipe/1/mighty-super-cheesecake.html">
+                      <div class="uk-card-media-top uk-cover-container">
+                        <img
+                          src="images/recipe_1618205715.jpg"
+                          alt="Mighty Super Cheesecake"
+                          uk-cover
+                        />
+                        <canvas width="600" height="300"></canvas>
+                      </div>
+                    </a>
+
+                    <div class="uk-card-body">
+                      <div class="uk-card-badge uk-label">Desserts</div>
+
+                      <div class="tas_rating">
+                        <img src="assets/img/like.svg" /><span>12</span>
+                      </div>
+
+                      <a
+                        class="uk-card-title"
+                        href="recipe/1/mighty-super-cheesecake.html"
+                        >Mighty Super Cheesecake</a
+                      >
+
+                      <ul class="uk-subnav" uk-margin>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-users"></i> 4 Serv.</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-clock"></i> 45 Min</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="uk-card-footer">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                          <a href="user/1.html">
+                            <div class="uk-cover-container uk-border-circle">
+                              <img src="images/1621537827.jpg" uk-cover />
+                              <canvas width="40" height="40"></canvas>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="uk-width-expand">
+                          <h5
+                            class="uk-margin-remove-bottom uk-flex uk-flex-middle"
+                          >
+                            <a class="uk-link-muted" href="user/1.html"
+                              >Wicombit</a
+                            >
+                            <img
+                              class="verify-badge"
+                              width="14"
+                              src="assets/img/badge.svg"
+                            />
+                          </h5>
+                          <p class="uk-text-meta uk-margin-remove-top">
+                            14/04/2021
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="tas_card_1">
+                  <div class="uk-card uk-card-default uk-border-rounded">
+                    <a href="recipe/9/tasty-croissant-and-tea.html">
+                      <div class="uk-card-media-top uk-cover-container">
+                        <img
+                          src="images/recipe_1620061168.jpg"
+                          alt="Tasty croissant and tea"
+                          uk-cover
+                        />
+                        <canvas width="600" height="300"></canvas>
+                      </div>
+                    </a>
+
+                    <div class="uk-card-body">
+                      <div class="uk-card-badge uk-label">Breakfast</div>
+
+                      <div class="tas_rating">
+                        <img src="assets/img/like.svg" /><span>2</span>
+                      </div>
+
+                      <a
+                        class="uk-card-title"
+                        href="recipe/9/tasty-croissant-and-tea.html"
+                        >Tasty croissant and tea</a
+                      >
+
+                      <ul class="uk-subnav" uk-margin>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-users"></i> 3 Serv.</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-clock"></i> 25 Min</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="uk-card-footer">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                          <a href="user/1.html">
+                            <div class="uk-cover-container uk-border-circle">
+                              <img src="images/1621537827.jpg" uk-cover />
+                              <canvas width="40" height="40"></canvas>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="uk-width-expand">
+                          <h5
+                            class="uk-margin-remove-bottom uk-flex uk-flex-middle"
+                          >
+                            <a class="uk-link-muted" href="user/1.html"
+                              >Wicombit</a
+                            >
+                            <img
+                              class="verify-badge"
+                              width="14"
+                              src="assets/img/badge.svg"
+                            />
+                          </h5>
+                          <p class="uk-text-meta uk-margin-remove-top">
+                            12/04/2021
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="tas_card_1">
+                  <div class="uk-card uk-card-default uk-border-rounded">
+                    <a href="recipe/8/crispy-burger-with-blue-cheese.html">
+                      <div class="uk-card-media-top uk-cover-container">
+                        <img
+                          src="images/recipe_1620060348.jpg"
+                          alt="Crispy Burger with Blue Cheese"
+                          uk-cover
+                        />
+                        <canvas width="600" height="300"></canvas>
+                      </div>
+                    </a>
+
+                    <div class="uk-card-body">
+                      <div class="uk-card-badge uk-label">Burger</div>
+
+                      <div class="tas_rating">
+                        <img src="assets/img/like.svg" /><span>2</span>
+                      </div>
+
+                      <a
+                        class="uk-card-title"
+                        href="recipe/8/crispy-burger-with-blue-cheese.html"
+                        >Crispy Burger with Blue Cheese</a
+                      >
+
+                      <ul class="uk-subnav" uk-margin>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-users"></i> 4 Serv.</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-clock"></i> 30 Min</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="uk-card-footer">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                          <a href="user/1.html">
+                            <div class="uk-cover-container uk-border-circle">
+                              <img src="images/1621537827.jpg" uk-cover />
+                              <canvas width="40" height="40"></canvas>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="uk-width-expand">
+                          <h5
+                            class="uk-margin-remove-bottom uk-flex uk-flex-middle"
+                          >
+                            <a class="uk-link-muted" href="user/1.html"
+                              >Wicombit</a
+                            >
+                            <img
+                              class="verify-badge"
+                              width="14"
+                              src="assets/img/badge.svg"
+                            />
+                          </h5>
+                          <p class="uk-text-meta uk-margin-remove-top">
+                            12/04/2021
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="tas_card_1">
+                  <div class="uk-card uk-card-default uk-border-rounded">
+                    <a
+                      href="recipe/10/blueberries-and-cream-almond-oatmeal.html"
+                    >
+                      <div class="uk-card-media-top uk-cover-container">
+                        <img
+                          src="images/recipe_1620061767.jpg"
+                          alt="Blueberries and Cream almond"
+                          uk-cover
+                        />
+                        <canvas width="600" height="300"></canvas>
+                      </div>
+                    </a>
+
+                    <div class="uk-card-body">
+                      <div class="uk-card-badge uk-label">Breakfast</div>
+
+                      <div class="tas_rating">
+                        <img src="assets/img/like.svg" /><span>2</span>
+                      </div>
+
+                      <a
+                        class="uk-card-title"
+                        href="recipe/10/blueberries-and-cream-almond-oatmeal.html"
+                        >Blueberries and Cream almond</a
+                      >
+
+                      <ul class="uk-subnav" uk-margin>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-users"></i> 2 Serv.</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-clock"></i> 8 Min</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="uk-card-footer">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                          <a href="user/1.html">
+                            <div class="uk-cover-container uk-border-circle">
+                              <img src="images/1621537827.jpg" uk-cover />
+                              <canvas width="40" height="40"></canvas>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="uk-width-expand">
+                          <h5
+                            class="uk-margin-remove-bottom uk-flex uk-flex-middle"
+                          >
+                            <a class="uk-link-muted" href="user/1.html"
+                              >Wicombit</a
+                            >
+                            <img
+                              class="verify-badge"
+                              width="14"
+                              src="assets/img/badge.svg"
+                            />
+                          </h5>
+                          <p class="uk-text-meta uk-margin-remove-top">
+                            12/04/2021
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="tas_card_1">
+                  <div class="uk-card uk-card-default uk-border-rounded">
+                    <a href="recipe/7/how-to-make-fast-margherita-pizza.html">
+                      <div class="uk-card-media-top uk-cover-container">
+                        <img
+                          src="images/recipe_1620060146.jpg"
+                          alt="How to make fast margherita pizza"
+                          uk-cover
+                        />
+                        <canvas width="600" height="300"></canvas>
+                      </div>
+                    </a>
+
+                    <div class="uk-card-body">
+                      <div class="uk-card-badge uk-label">Pizza</div>
+
+                      <div class="tas_rating">
+                        <img src="assets/img/like.svg" /><span>7</span>
+                      </div>
+
+                      <a
+                        class="uk-card-title"
+                        href="recipe/7/how-to-make-fast-margherita-pizza.html"
+                        >How to make fast margherita pizza</a
+                      >
+
+                      <ul class="uk-subnav" uk-margin>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-users"></i> 4 Serv.</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-clock"></i> 45 Min</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="uk-card-footer">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                          <a href="user/2.html">
+                            <div class="uk-cover-container uk-border-circle">
+                              <img src="images/1621975380.png" uk-cover />
+                              <canvas width="40" height="40"></canvas>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="uk-width-expand">
+                          <h5
+                            class="uk-margin-remove-bottom uk-flex uk-flex-middle"
+                          >
+                            <a class="uk-link-muted" href="user/2.html"
+                              >Hanan</a
+                            >
+                          </h5>
+                          <p class="uk-text-meta uk-margin-remove-top">
+                            12/04/2021
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="tas_card_1">
+                  <div class="uk-card uk-card-default uk-border-rounded">
+                    <a href="recipe/5/brownies-with-walnuts.html">
+                      <div class="uk-card-media-top uk-cover-container">
+                        <img
+                          src="images/recipe_1620058937.jpg"
+                          alt="Brownies with Walnuts"
+                          uk-cover
+                        />
+                        <canvas width="600" height="300"></canvas>
+                      </div>
+                    </a>
+
+                    <div class="uk-card-body">
+                      <div class="uk-card-badge uk-label">Desserts</div>
+
+                      <div class="tas_rating">
+                        <img src="assets/img/like.svg" /><span>2</span>
+                      </div>
+
+                      <a
+                        class="uk-card-title"
+                        href="recipe/5/brownies-with-walnuts.html"
+                        >Brownies with Walnuts</a
+                      >
+
+                      <ul class="uk-subnav" uk-margin>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-users"></i> 3 Serv.</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-clock"></i> 25 Min</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="uk-card-footer">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                          <a href="user/1.html">
+                            <div class="uk-cover-container uk-border-circle">
+                              <img src="images/1621537827.jpg" uk-cover />
+                              <canvas width="40" height="40"></canvas>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="uk-width-expand">
+                          <h5
+                            class="uk-margin-remove-bottom uk-flex uk-flex-middle"
+                          >
+                            <a class="uk-link-muted" href="user/1.html"
+                              >Wicombit</a
+                            >
+                            <img
+                              class="verify-badge"
+                              width="14"
+                              src="assets/img/badge.svg"
+                            />
+                          </h5>
+                          <p class="uk-text-meta uk-margin-remove-top">
+                            12/04/2021
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="tas_card_1">
+                  <div class="uk-card uk-card-default uk-border-rounded">
+                    <a href="recipe/6/berries-and-banana-smoothie.html">
+                      <div class="uk-card-media-top uk-cover-container">
+                        <img
+                          src="images/recipe_1620059598.jpg"
+                          alt="Berries and Banana Smoothie"
+                          uk-cover
+                        />
+                        <canvas width="600" height="300"></canvas>
+                      </div>
+                    </a>
+
+                    <div class="uk-card-body">
+                      <div class="uk-card-badge uk-label">Smoothies</div>
+
+                      <div class="tas_rating">
+                        <img src="assets/img/like.svg" /><span>2</span>
+                      </div>
+
+                      <a
+                        class="uk-card-title"
+                        href="recipe/6/berries-and-banana-smoothie.html"
+                        >Berries and Banana Smoothie</a
+                      >
+
+                      <ul class="uk-subnav" uk-margin>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-users"></i> 1 Serv.</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-clock"></i> 5 Min</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="uk-card-footer">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                          <a href="user/1.html">
+                            <div class="uk-cover-container uk-border-circle">
+                              <img src="images/1621537827.jpg" uk-cover />
+                              <canvas width="40" height="40"></canvas>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="uk-width-expand">
+                          <h5
+                            class="uk-margin-remove-bottom uk-flex uk-flex-middle"
+                          >
+                            <a class="uk-link-muted" href="user/1.html"
+                              >Wicombit</a
+                            >
+                            <img
+                              class="verify-badge"
+                              width="14"
+                              src="assets/img/badge.svg"
+                            />
+                          </h5>
+                          <p class="uk-text-meta uk-margin-remove-top">
+                            12/04/2021
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="tas_card_1">
+                  <div class="uk-card uk-card-default uk-border-rounded">
+                    <a
+                      href="recipe/2/broad-beans-tomato-garlic-mozzarella-cheese-bruschetta.html"
+                    >
+                      <div class="uk-card-media-top uk-cover-container">
+                        <img
+                          src="images/recipe_1620056120.jpg"
+                          alt="Mozzarella Cheese Bruschetta"
+                          uk-cover
+                        />
+                        <canvas width="600" height="300"></canvas>
+                      </div>
+                    </a>
+
+                    <div class="uk-card-body">
+                      <div class="uk-card-badge uk-label">Pasta</div>
+
+                      <div class="tas_rating">
+                        <img src="assets/img/like.svg" /><span>1</span>
+                      </div>
+
+                      <a
+                        class="uk-card-title"
+                        href="recipe/2/broad-beans-tomato-garlic-mozzarella-cheese-bruschetta.html"
+                        >Mozzarella Cheese Bruschetta</a
+                      >
+
+                      <ul class="uk-subnav" uk-margin>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-users"></i> 2 Serv.</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            ><i class="tas_icon ti ti-clock"></i> 5 Min</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="uk-card-footer">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                          <a href="user/1.html">
+                            <div class="uk-cover-container uk-border-circle">
+                              <img src="images/1621537827.jpg" uk-cover />
+                              <canvas width="40" height="40"></canvas>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="uk-width-expand">
+                          <h5
+                            class="uk-margin-remove-bottom uk-flex uk-flex-middle"
+                          >
+                            <a class="uk-link-muted" href="user/1.html"
+                              >Wicombit</a
+                            >
+                            <img
+                              class="verify-badge"
+                              width="14"
+                              src="assets/img/badge.svg"
+                            />
+                          </h5>
+                          <p class="uk-text-meta uk-margin-remove-top">
+                            12/04/2021
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <ul
+            class="tas_dotnav_2 uk-slider-nav uk-dotnav uk-flex-center uk-margin-large-top"
+          ></ul>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Most Liked recipies -->
+    <!-- <div
+      class="uk-container uk-margin-top"
+      uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 100"
+    >
+      <h2 class="tas_heading uk-heading-line uk-text-center">
+        <span>Most Liked Recipes</span>
+      </h2>
+
+      <div
+        class="uk-grid-match uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-3@l"
+        uk-grid
+      >
+        <div>
+          <a href="recipe/1/mighty-super-cheesecake.html">
+            <div class="tas_card_2 uk-cover-container uk-height-medium">
+              <img
+                src="images/recipe_1618205715.jpg"
+                alt="Mighty Super Cheesecake"
+                uk-cover
+              />
+
+              <div class="tas_rating">
+                <img src="assets/img/like.svg" /><span>12</span>
+              </div>
+
+              <div class="uk-overlay uk-position-bottom">
+                <div class="uk-label">Desserts</div>
+                <p class="card-title">Mighty Super Cheesecake</p>
+                <ul class="uk-subnav" uk-margin>
+                  <li>
+                    <span><i class="tas_icon ti ti-users"></i> 4 Serv.</span>
+                  </li>
+                  <li>
+                    <span><i class="tas_icon ti ti-clock"></i> 45 Min</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a href="recipe/7/how-to-make-fast-margherita-pizza.html">
+            <div class="tas_card_2 uk-cover-container uk-height-medium">
+              <img
+                src="images/recipe_1620060146.jpg"
+                alt="How to make fast margherita pizza"
+                uk-cover
+              />
+
+              <div class="tas_rating">
+                <img src="assets/img/like.svg" /><span>7</span>
+              </div>
+
+              <div class="uk-overlay uk-position-bottom">
+                <div class="uk-label">Pizza</div>
+                <p class="card-title">How to make fast margherita pizza</p>
+                <ul class="uk-subnav" uk-margin>
+                  <li>
+                    <span><i class="tas_icon ti ti-users"></i> 4 Serv.</span>
+                  </li>
+                  <li>
+                    <span><i class="tas_icon ti ti-clock"></i> 45 Min</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a href="recipe/3/spinach-and-cheese-pasta.html">
+            <div class="tas_card_2 uk-cover-container uk-height-medium">
+              <img
+                src="images/recipe_1619359174.jpg"
+                alt="Spinach and Cheese Pasta"
+                uk-cover
+              />
+
+              <div class="tas_rating">
+                <img src="assets/img/like.svg" /><span>5</span>
+              </div>
+
+              <div class="uk-overlay uk-position-bottom">
+                <div class="uk-label">Vegan</div>
+                <p class="card-title">Spinach and Cheese Pasta</p>
+                <ul class="uk-subnav" uk-margin>
+                  <li>
+                    <span><i class="tas_icon ti ti-users"></i> 4 Serv.</span>
+                  </li>
+                  <li>
+                    <span><i class="tas_icon ti ti-clock"></i> 15 Min</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a href="recipe/5/brownies-with-walnuts.html">
+            <div class="tas_card_2 uk-cover-container uk-height-medium">
+              <img
+                src="images/recipe_1620058937.jpg"
+                alt="Brownies with Walnuts"
+                uk-cover
+              />
+
+              <div class="tas_rating">
+                <img src="assets/img/like.svg" /><span>2</span>
+              </div>
+
+              <div class="uk-overlay uk-position-bottom">
+                <div class="uk-label">Desserts</div>
+                <p class="card-title">Brownies with Walnuts</p>
+                <ul class="uk-subnav" uk-margin>
+                  <li>
+                    <span><i class="tas_icon ti ti-users"></i> 3 Serv.</span>
+                  </li>
+                  <li>
+                    <span><i class="tas_icon ti ti-clock"></i> 25 Min</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a href="recipe/6/berries-and-banana-smoothie.html">
+            <div class="tas_card_2 uk-cover-container uk-height-medium">
+              <img
+                src="images/recipe_1620059598.jpg"
+                alt="Berries and Banana Smoothie"
+                uk-cover
+              />
+
+              <div class="tas_rating">
+                <img src="assets/img/like.svg" /><span>2</span>
+              </div>
+
+              <div class="uk-overlay uk-position-bottom">
+                <div class="uk-label">Smoothies</div>
+                <p class="card-title">Berries and Banana Smoothie</p>
+                <ul class="uk-subnav" uk-margin>
+                  <li>
+                    <span><i class="tas_icon ti ti-users"></i> 1 Serv.</span>
+                  </li>
+                  <li>
+                    <span><i class="tas_icon ti ti-clock"></i> 5 Min</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a href="recipe/8/crispy-burger-with-blue-cheese.html">
+            <div class="tas_card_2 uk-cover-container uk-height-medium">
+              <img
+                src="images/recipe_1620060348.jpg"
+                alt="Crispy Burger with Blue Cheese"
+                uk-cover
+              />
+
+              <div class="tas_rating">
+                <img src="assets/img/like.svg" /><span>2</span>
+              </div>
+
+              <div class="uk-overlay uk-position-bottom">
+                <div class="uk-label">Burger</div>
+                <p class="card-title">Crispy Burger with Blue Cheese</p>
+                <ul class="uk-subnav" uk-margin>
+                  <li>
+                    <span><i class="tas_icon ti ti-users"></i> 4 Serv.</span>
+                  </li>
+                  <li>
+                    <span><i class="tas_icon ti ti-clock"></i> 30 Min</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- recipies by community -->
+    <!-- <div
+      class="uk-container uk-margin-top"
+      uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 100"
+    >
+      <h2 class="tas_heading uk-heading-line uk-text-center">
+        <span>Recipes By Our Community</span>
+      </h2>
+
+      <div
+        class="uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-2@l"
+        uk-grid
+      >
+        <div>
+          <div
+            class="tas_card_4 uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+            uk-grid
+          >
+            <div class="uk-card-media-left uk-cover-container">
+              <a href="recipe/1/mighty-super-cheesecake.html">
+                <img
+                  src="images/recipe_1618205715.jpg"
+                  alt="Mighty Super Cheesecake"
+                  uk-cover
+                />
+              </a>
+              <canvas width="600" height="350"></canvas>
+            </div>
+            <div>
+              <div class="uk-card-body">
+                <div class="tas_rating">
+                  <img src="assets/img/like.svg" /><span>12</span>
+                </div>
+
+                <a
+                  class="uk-card-title"
+                  href="recipe/1/mighty-super-cheesecake.html"
+                  >Mighty Super Cheesecake</a
+                >
+
+                <ul class="uk-subnav" uk-margin>
+                  <li>
+                    <span><i class="tas_icon ti ti-users"></i> 4 Serv.</span>
+                  </li>
+                  <li>
+                    <span><i class="tas_icon ti ti-clock"></i> 45 Min</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="tas_card_4 uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+            uk-grid
+          >
+            <div class="uk-card-media-left uk-cover-container">
+              <a
+                href="recipe/2/broad-beans-tomato-garlic-mozzarella-cheese-bruschetta.html"
+              >
+                <img
+                  src="images/recipe_1620056120.jpg"
+                  alt="Mozzarella Cheese Bruschetta"
+                  uk-cover
+                />
+              </a>
+              <canvas width="600" height="350"></canvas>
+            </div>
+            <div>
+              <div class="uk-card-body">
+                <div class="tas_rating">
+                  <img src="assets/img/like.svg" /><span>1</span>
+                </div>
+
+                <a
+                  class="uk-card-title"
+                  href="recipe/2/broad-beans-tomato-garlic-mozzarella-cheese-bruschetta.html"
+                  >Mozzarella Cheese Bruschetta</a
+                >
+
+                <ul class="uk-subnav" uk-margin>
+                  <li>
+                    <span><i class="tas_icon ti ti-users"></i> 2 Serv.</span>
+                  </li>
+                  <li>
+                    <span><i class="tas_icon ti ti-clock"></i> 5 Min</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="tas_card_4 uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+            uk-grid
+          >
+            <div class="uk-card-media-left uk-cover-container">
+              <a href="recipe/3/spinach-and-cheese-pasta.html">
+                <img
+                  src="images/recipe_1619359174.jpg"
+                  alt="Spinach and Cheese Pasta"
+                  uk-cover
+                />
+              </a>
+              <canvas width="600" height="350"></canvas>
+            </div>
+            <div>
+              <div class="uk-card-body">
+                <div class="tas_rating">
+                  <img src="assets/img/like.svg" /><span>5</span>
+                </div>
+
+                <a
+                  class="uk-card-title"
+                  href="recipe/3/spinach-and-cheese-pasta.html"
+                  >Spinach and Cheese Pasta</a
+                >
+
+                <ul class="uk-subnav" uk-margin>
+                  <li>
+                    <span><i class="tas_icon ti ti-users"></i> 4 Serv.</span>
+                  </li>
+                  <li>
+                    <span><i class="tas_icon ti ti-clock"></i> 15 Min</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="tas_card_4 uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+            uk-grid
+          >
+            <div class="uk-card-media-left uk-cover-container">
+              <a href="recipe/5/brownies-with-walnuts.html">
+                <img
+                  src="images/recipe_1620058937.jpg"
+                  alt="Brownies with Walnuts"
+                  uk-cover
+                />
+              </a>
+              <canvas width="600" height="350"></canvas>
+            </div>
+            <div>
+              <div class="uk-card-body">
+                <div class="tas_rating">
+                  <img src="assets/img/like.svg" /><span>2</span>
+                </div>
+
+                <a
+                  class="uk-card-title"
+                  href="recipe/5/brownies-with-walnuts.html"
+                  >Brownies with Walnuts</a
+                >
+
+                <ul class="uk-subnav" uk-margin>
+                  <li>
+                    <span><i class="tas_icon ti ti-users"></i> 3 Serv.</span>
+                  </li>
+                  <li>
+                    <span><i class="tas_icon ti ti-clock"></i> 25 Min</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="tas_card_4 uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+            uk-grid
+          >
+            <div class="uk-card-media-left uk-cover-container">
+              <a href="recipe/6/berries-and-banana-smoothie.html">
+                <img
+                  src="images/recipe_1620059598.jpg"
+                  alt="Berries and Banana Smoothie"
+                  uk-cover
+                />
+              </a>
+              <canvas width="600" height="350"></canvas>
+            </div>
+            <div>
+              <div class="uk-card-body">
+                <div class="tas_rating">
+                  <img src="assets/img/like.svg" /><span>2</span>
+                </div>
+
+                <a
+                  class="uk-card-title"
+                  href="recipe/6/berries-and-banana-smoothie.html"
+                  >Berries and Banana Smoothie</a
+                >
+
+                <ul class="uk-subnav" uk-margin>
+                  <li>
+                    <span><i class="tas_icon ti ti-users"></i> 1 Serv.</span>
+                  </li>
+                  <li>
+                    <span><i class="tas_icon ti ti-clock"></i> 5 Min</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="tas_card_4 uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+            uk-grid
+          >
+            <div class="uk-card-media-left uk-cover-container">
+              <a href="recipe/7/how-to-make-fast-margherita-pizza.html">
+                <img
+                  src="images/recipe_1620060146.jpg"
+                  alt="How to make fast margherita pizza"
+                  uk-cover
+                />
+              </a>
+              <canvas width="600" height="350"></canvas>
+            </div>
+            <div>
+              <div class="uk-card-body">
+                <div class="tas_rating">
+                  <img src="assets/img/like.svg" /><span>7</span>
+                </div>
+
+                <a
+                  class="uk-card-title"
+                  href="recipe/7/how-to-make-fast-margherita-pizza.html"
+                  >How to make fast margherita pizza</a
+                >
+
+                <ul class="uk-subnav" uk-margin>
+                  <li>
+                    <span><i class="tas_icon ti ti-users"></i> 4 Serv.</span>
+                  </li>
+                  <li>
+                    <span><i class="tas_icon ti ti-clock"></i> 45 Min</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="tas_card_4 uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+            uk-grid
+          >
+            <div class="uk-card-media-left uk-cover-container">
+              <a href="recipe/8/crispy-burger-with-blue-cheese.html">
+                <img
+                  src="images/recipe_1620060348.jpg"
+                  alt="Crispy Burger with Blue Cheese"
+                  uk-cover
+                />
+              </a>
+              <canvas width="600" height="350"></canvas>
+            </div>
+            <div>
+              <div class="uk-card-body">
+                <div class="tas_rating">
+                  <img src="assets/img/like.svg" /><span>2</span>
+                </div>
+
+                <a
+                  class="uk-card-title"
+                  href="recipe/8/crispy-burger-with-blue-cheese.html"
+                  >Crispy Burger with Blue Cheese</a
+                >
+
+                <ul class="uk-subnav" uk-margin>
+                  <li>
+                    <span><i class="tas_icon ti ti-users"></i> 4 Serv.</span>
+                  </li>
+                  <li>
+                    <span><i class="tas_icon ti ti-clock"></i> 30 Min</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="tas_card_4 uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+            uk-grid
+          >
+            <div class="uk-card-media-left uk-cover-container">
+              <a href="recipe/9/tasty-croissant-and-tea.html">
+                <img
+                  src="images/recipe_1620061168.jpg"
+                  alt="Tasty croissant and tea"
+                  uk-cover
+                />
+              </a>
+              <canvas width="600" height="350"></canvas>
+            </div>
+            <div>
+              <div class="uk-card-body">
+                <div class="tas_rating">
+                  <img src="assets/img/like.svg" /><span>2</span>
+                </div>
+
+                <a
+                  class="uk-card-title"
+                  href="recipe/9/tasty-croissant-and-tea.html"
+                  >Tasty croissant and tea</a
+                >
+
+                <ul class="uk-subnav" uk-margin>
+                  <li>
+                    <span><i class="tas_icon ti ti-users"></i> 3 Serv.</span>
+                  </li>
+                  <li>
+                    <span><i class="tas_icon ti ti-clock"></i> 25 Min</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- FOOTER -->
+    <!-- <div class="tas-footer">
+      <div class="uk-container">
+        <div class="tas-widgets uk-grid-large" uk-grid>
+          <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-2@m">
+            <h4 class="tas-title">About Us</h4>
+            <p class="tas-about">
+              An About Us page helps your company make a good first impression,
+              and is critical for building custo
+            </p>
+            <ul class="tas-follow uk-iconnav">
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  uk-icon="icon: facebook"
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/home" uk-icon="icon: twitter"></a>
+              </li>
+
+              <li>
+                <a href="https://www.youtube.com/" uk-icon="icon: youtube"></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/"
+                  uk-icon="icon: linkedin"
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-4@m">
+            <h4 class="tas-title">Quick Links</h4>
+            <ul class="uk-list">
+              <li>
+                <a href="https://wicombit.com/demo/realfood" target="_self"
+                  >Home Page</a
+                >
+              </li>
+              <li>
+                <a href="privacy-policy.html" target="_self">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="terms-and-conditions.html" target="_self"
+                  >Terms and Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-4@m">
+            <h4 class="tas-title">Newsletter</h4>
+
+            <div class="new-subscriber">
+              <form>
+                <div class="uk-inline uk-width-1-1">
+                  <i class="ti ti-at uk-form-icon"></i>
+                  <input
+                    type="email"
+                    id="subscriber_email"
+                    name="subscriber_email"
+                    class="uk-input uk-width-1-1 uk-form-large uk-border-pill"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <button
+                  class="uk-button uk-width-1-1 uk-button-large uk-button-primary uk-border-pill uk-margin-small-top"
+                  value="Suscribe Now"
+                  type="submit"
+                  id="submit-subscriber"
+                >
+                  Suscribe Now
+                </button>
+
+                <div id="showresults"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tas-copyright">
+        <div class="uk-container">
+          <div uk-grid>
+            <div class="uk-width-1-1 uk-text-center">© 2021 Real Food</div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <script src="assets/js/nice-select.min.js"></script>
+    <script src="assets/js/datatables.min.js"></script>
+    <script src="assets/js/datatables.uikit.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
