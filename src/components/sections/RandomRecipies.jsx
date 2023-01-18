@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const RandomRecipies = () => {
   return (
@@ -667,7 +667,7 @@ const RandomRecipies = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default RandomRecipies;
+export default RandomRecipies

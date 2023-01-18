@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Login = () => {
+const SignUp = () => {
   return (
     <>
       <div
@@ -31,6 +31,28 @@ const Login = () => {
                       placeholder="Email Address"
                     />
                   </div>
+                  <h4 className="tas-title">Email</h4>
+                  <div className="uk-inline uk-width-1-1">
+                    <i className="ti ti-at uk-form-icon"></i>
+                    <input
+                      type="email"
+                      id="subscriber_email"
+                      name="subscriber_email"
+                      className="uk-input uk-width-1-1 uk-form-large uk-border-pill"
+                      placeholder="Email Address"
+                    />
+                  </div>
+                  <h4 className="tas-title">Email</h4>
+                  <div className="uk-inline uk-width-1-1">
+                    <i className="ti ti-at uk-form-icon"></i>
+                    <input
+                      type="email"
+                      id="subscriber_email"
+                      name="subscriber_email"
+                      className="uk-input uk-width-1-1 uk-form-large uk-border-pill"
+                      placeholder="Email Address"
+                    />
+                  </div>
                   <h4 className="tas-title">Password</h4>
                   <div className="uk-inline uk-width-1-1">
                     <i className="ti ti-at uk-form-icon"></i>
@@ -46,20 +68,20 @@ const Login = () => {
                   <br />
                   <button
                     className="uk-button uk-width-1-1 uk-button-large uk-button-primary uk-border-pill uk-margin-small-top"
-                    value="Suscribe Now"
+                    value="Sign Up"
                     type="submit"
                     id="submit-subscriber"
                   >
-                    Login
+                    Sign Up
                   </button>
                   <Link
                     className="uk-button uk-width-1-1 uk-button-large uk-button-primary uk-border-pill uk-margin-small-top"
                     value="Suscribe Now"
                     type="submit"
                     id="submit-subscriber"
-                    to="/signup"
+                    to="/login"
                   >
-                    Sign Up
+                    Login
                   </Link>
                   <div id="showresults"></div>
                 </form>
@@ -72,4 +94,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default SignUp

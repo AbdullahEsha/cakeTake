@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const ShopPage = () => {
   return (
@@ -264,7 +264,7 @@ const ShopPage = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ShopPage;
+export default ShopPage
